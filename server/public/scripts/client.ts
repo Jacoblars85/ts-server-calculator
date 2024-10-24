@@ -5,8 +5,6 @@ console.log('client.ts is sourced!');
 let result = 0;
 let operator = '';
 
-
-
 //the GET route for the math
 function getCalc() {
     axios({
@@ -48,20 +46,20 @@ function operatorButton(event, op) {
     console.log('we are clicking operator button');
     event.preventDefault();
   
-    if (op === '+') {
-      operator = '+'
-      console.log(operator);
-    } else if (op === '-') {
-      operator = '-'
-      console.log(operator);
-    } else if (op === '*') {
-      operator = '*'
-      console.log(operator);
-    } else if (op === '/') {
-      operator = '/'
-      console.log(operator);
-    } 
-    return operator;
+    // if (op === '+') {
+    //   operator = '+'
+    //   console.log(operator);
+    // } else if (op === '-') {
+    //   operator = '-'
+    //   console.log(operator);
+    // } else if (op === '*') {
+    //   operator = '*'
+    //   console.log(operator);
+    // } else if (op === '/') {
+    //   operator = '/'
+    //   console.log(operator);
+    // } 
+    // return operator;
   }
 
   getCalc()
