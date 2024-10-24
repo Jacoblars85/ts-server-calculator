@@ -41,3 +41,5 @@ function operatorButton(event, op) {
     } 
     return operator;
   }
+
+  getCalc()
