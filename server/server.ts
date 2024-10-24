@@ -24,12 +24,6 @@ app.get('/calculations', (req, res) => {
 // PLEASE DO NOT MODIFY ANY CODE BELOW THESE BEARS:
 // 🐻  🐻‍❄️  🧸  🐻  🐻‍❄️  🧸  🐻  🐻‍❄️  🧸  🐻  🐻‍❄️  🧸
 
-// Makes it so you don't have to kill the server
-// on 5000 in order to run the tests:
-if (process.env.NODE_ENV === 'test') {
-  PORT = 5002;
-}
-
 // This starts the server...but also stores it in a variable.
 // This is weird. We have to do it for testing reasons. There
 // is absolutely no need for you to reason about this.
