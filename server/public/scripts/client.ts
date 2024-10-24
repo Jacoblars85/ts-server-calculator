@@ -1,5 +1,3 @@
-import axios from "./axios";
-
 console.log('client.ts is sourced!');
 
 let result = 0;
