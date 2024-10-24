@@ -20,6 +20,30 @@ function getCalc() {
   
   }
 
+  //Renders the math onto the screen below
+function renderingMath(calculations) {
+    console.log('were rendering');
+    
+    //finding the spot to put the new math
+    let recentResult = document.getElementById('recentResult');
+    let resultHistory = document.getElementById('resultHistory');
+
+        //clearing previous spot for this area
+        // resultHistory.innerHTML = ''
+        // recentResult.innerHTML = '';
+      
+      //   adds to the newest math that was just done
+    //     recentResult.innerHTML += `
+    //     <b>${calculations[calculations.length-1].result}</b>
+    //   `
+        for (let calc of calculations) {
+            //should add all of the recent resaults into this part
+        //   resultHistory.innerHTML +=`
+        //   <ol>${calc.numOne} ${calc.operator} ${calc.numTwo} = ${calc.result}</ol>
+        //   `
+        }
+
+}
 
   //figures out which operator got clicked
 function operatorButton(event, op) {
