@@ -16,3 +16,25 @@ function getCalc() {
       })
   
   }
+
+
+  //figures out which operator got clicked
+function operatorButton(event, op) {
+    console.log('we are clicking operator button');
+    event.preventDefault();
+  
+    if (op === '+') {
+      operator = '+'
+      console.log(operator);
+    } else if (op === '-') {
+      operator = '-'
+      console.log(operator);
+    } else if (op === '*') {
+      operator = '*'
+      console.log(operator);
+    } else if (op === '/') {
+      operator = '/'
+      console.log(operator);
+    } 
+    return operator;
+  }
