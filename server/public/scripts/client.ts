@@ -2,6 +2,9 @@ import axios from "./axios";
 
 console.log('client.ts is sourced!');
 
+let result = 0;
+let operator = '';
+
 
 
 //the GET route for the math
