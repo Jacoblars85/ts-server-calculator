@@ -1,7 +1,7 @@
 console.log('client.ts is sourced!');
 
-let result = 0;
-let operator = '';
+let result: number = 0;
+let operator: string = '';
 
 //the GET route for the math
 function getCalc() {
