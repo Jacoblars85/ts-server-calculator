@@ -13,11 +13,9 @@ function getCalc() {
         url: '/calculations',
         method: 'GET'
       }).then((response) => {
-        let calculations = response.data 
-        renderingMath(calculations)
-        console.log('this data is being rendered', calculations);
+        renderingMath(response.data)
+        console.log('this data is being rendered', response.data);
       })
-  
   }
 
   //Renders the math onto the screen below
