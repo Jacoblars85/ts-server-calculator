@@ -46,12 +46,6 @@ function postMath(event) {
     let numOne = document.getElementById('numOne').valueAsNumber
     let numTwo = document.getElementById('numTwo').valueAsNumber
     operatorButton(event);
-    
-
-    //clears the inputs
-    numOne.value = ''
-    numTwo.value = ''
-    
   
     //puts the input into an object 
     let newMath = {
@@ -69,6 +63,10 @@ function postMath(event) {
       console.log('did this work?');
         getMath()
     })
+
+       //clears the inputs
+       numOne.value = ''
+       numTwo.value = ''
 }
 
   //figures out which operator got clicked
