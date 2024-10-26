@@ -35,16 +35,16 @@ function renderingMath(calculations) {
         //   resultHistory.innerHTML +=`
         //   <ol>${calc.numOne} ${calc.operator} ${calc.numTwo} = ${calc.result}</ol>
         //   `
-        }
+        };
 
 }
 
 function postMath(event) {
-    event.preventDefault()
+    event.preventDefault();
 
       //grabs the input and makes it a variable
-    let numOne = document.getElementById('numOne') as HTMLInputElement
-    let numTwo = document.getElementById('numTwo') as HTMLInputElement
+    let numOne = document.getElementById('numOne') as HTMLInputElement;
+    let numTwo = document.getElementById('numTwo') as HTMLInputElement;
     operatorButton(event);
   
     //puts the input into an object 
@@ -53,20 +53,22 @@ function postMath(event) {
       operator: operator,
       numTwo: numTwo.valueAsNumber,
       result: result
-    }
+    };
+
     console.log(newMath);
+
     axios({
       method: 'POST',
       url: '/calculations',
       data: newMath
     }).then((response) => {
       console.log('did this work?');
-        getCalc()
-    })
+        getCalc();
+    });
 
        //clears the inputs
-       numOne.value = ''
-       numTwo.value = ''
+       numOne.value = '';
+       numTwo.value = '';
 }
 
   //figures out which operator got clicked
@@ -86,7 +88,7 @@ function operatorButton(event, op) {
     } else if (op === '/') {
       operator = '/'
       console.log(operator);
-    } 
+    }
     return operator;
   }
 
