@@ -61,7 +61,7 @@ function postMath(event) {
       data: newMath
     }).then((response) => {
       console.log('did this work?');
-        getMath()
+        getCalc()
     })
 
        //clears the inputs
