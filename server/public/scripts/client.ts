@@ -49,9 +49,9 @@ function postMath(event) {
   
     //puts the input into an object 
     let newMath = {
-      numOne: numOne,
+      numOne: numOne.valueAsNumber,
       operator: operator,
-      numTwo: numTwo,
+      numTwo: numTwo.valueAsNumber,
       result: result
     }
     console.log(newMath);
