@@ -43,8 +43,8 @@ function postMath(event) {
     event.preventDefault()
 
       //grabs the input and makes it a variable
-    let numOne = document.getElementById('numOne')
-    let numTwo = document.getElementById('numTwo')
+    let numOne = document.getElementById('numOne') as HTMLInputElement
+    let numTwo = document.getElementById('numTwo') as HTMLInputElement
     operatorButton(event);
   
     //puts the input into an object 
