@@ -49,8 +49,8 @@ function postMath(event) {
     
 
     //clears the inputs
-    document.getElementById('numOne').value = ''
-    document.getElementById('numTwo').value = ''
+    numOne.value = ''
+    numTwo.value = ''
     
   
     //puts the input into an object 
