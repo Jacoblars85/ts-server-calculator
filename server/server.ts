@@ -12,7 +12,20 @@ let calculations = [{
     operator: '+',
     numTwo: 2,
     result: 4,
-}]
+}];
+
+//does all the math
+function doingCalc(numOne, numTwo, operator) {
+  if (operator === '+') {
+    return Number(numOne) + Number(numTwo)
+  } else if (operator === '-') {
+    return Number(numOne) - Number(numTwo)
+  } else if (operator === '*') {
+    return Number(numOne) * Number(numTwo)
+  } else if (operator === '/') {
+    return Number(numOne) / Number(numTwo)
+  }
+}
 
 
 // GET /calculations
@@ -33,7 +46,7 @@ app.post('/calculations', (req, res) => {
 let newestResult = calculations[calculations.length-1];
 
 //does the math
-newestResult.result = doingMath(newestResult.numOne, newestResult.numTwo, newestResult.operator);
+newestResult.result = doingCalc(newestResult.numOne, newestResult.numTwo, newestResult.operator);
 
 console.log('this should be the result', newestResult.result);
 console.log('this should be the calc array', calculations);
