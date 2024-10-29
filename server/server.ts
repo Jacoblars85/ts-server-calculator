@@ -43,7 +43,7 @@ app.post('/calculations', (req, res) => {
   calculations.push(newMath)
 
 //gets the last object in that array
-let newestResult = calculations[calculations.length-1];
+let newestResult: any = calculations[calculations.length-1];
 
 //does the math
 newestResult.result = doingCalc(newestResult.numOne, newestResult.numTwo, newestResult.operator);
