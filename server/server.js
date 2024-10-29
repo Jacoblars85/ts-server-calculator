@@ -5,7 +5,12 @@ app.use(express.json());
 app.use(express.static('server/public'));
 // Global variable that will contain all of the
 // calculation objects:
-var calculations = [];
+var calculations = [{
+        numOne: 2,
+        operator: '+',
+        numTwo: 2,
+        result: 4,
+    }];
 // Here's a wonderful place to make some routes:
 // GET /calculations
 app.get('/calculations', function (req, res) {
@@ -15,11 +20,6 @@ app.get('/calculations', function (req, res) {
 // POST /calculations
 // PLEASE DO NOT MODIFY ANY CODE BELOW THESE BEARS:
 // 🐻  🐻‍❄️  🧸  🐻  🐻‍❄️  🧸  🐻  🐻‍❄️  🧸  🐻  🐻‍❄️  🧸
-// Makes it so you don't have to kill the server
-// on 5000 in order to run the tests:
-if (process.env.NODE_ENV === 'test') {
-    PORT = 5002;
-}
 // This starts the server...but also stores it in a variable.
 // This is weird. We have to do it for testing reasons. There
 // is absolutely no need for you to reason about this.
