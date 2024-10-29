@@ -14,6 +14,7 @@ function getCalc() {
 //Renders the math onto the screen below
 function renderingMath(calculations) {
     console.log("were rendering");
+    console.log('calculations', calculations);
     //finding the spot to put the new math
     var recentResult = document.getElementById("recentResult");
     var resultHistory = document.getElementById("resultHistory");
